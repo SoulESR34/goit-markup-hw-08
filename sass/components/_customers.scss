@@ -1,0 +1,56 @@
+.customers__container{
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
+.customers{
+    @include flexbox;
+    justify-content: center;
+}
+
+.customer{
+    padding: 12px 33px;
+    border: 1px solid $color-fill-icons; 
+    border-radius: 4px;
+    width: 170px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+
+    &__icon{
+        fill: $color-fill-icons;
+        width: 106px;
+        height: 60px;
+    }
+    
+    &:hover &__icon,
+    &:focus &__icon{
+        fill: $color-buttons-links;
+    }
+}
+
+@include screen-1200{
+    .regular-customers{
+
+        .customers__container{
+            width: 738px;
+        }
+
+        .customer{
+            width: 226px;
+
+        }
+    }
+}
+
+@include screen-768{
+    .regular-customers{
+        .customers__container{
+            width: 450px;
+        }
+
+        .customer{
+            width: 210px;
+        }
+    }
+}

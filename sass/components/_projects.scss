@@ -1,0 +1,70 @@
+.project__container__bar__buttons{
+    margin-bottom: 50px;
+}
+
+.projects__filters{
+    @include flexbox;
+    justify-content: center;
+    gap: 8px;
+
+    .filter__button{
+        width: 128px;
+        height: 38px;
+        border-radius: 4px;
+    }
+}
+
+.projects__container{
+    margin-bottom: 82px;
+}
+
+
+.projects{
+    @include flexbox;
+    justify-content: center;
+    
+    .project{
+        width: 370px;
+        border: 1px solid  $color-border-header;
+
+        &:hover{
+            cursor: pointer;
+            color: $color-default-font;
+            box-shadow: 1px 4px 6px $color-shadow-cards-portfolio;
+        }
+    
+        &__frame{
+            height: 294px;
+            position: relative;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+        }
+        
+        &__frame .project__overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+        
+            display: flex;
+            align-items: center;
+        
+            background-color: rgba(33, 149, 243, 0.9);
+            color: $color-white;
+            width: 100%;
+            height: 100%;
+            padding: 24px;
+            transform: translateY(100%);
+            transition: ease-in 0.25s;
+        }
+        
+        &:hover .project__frame .project__overlay{
+            transform: translateY(0)
+        }
+        
+        &__text{
+            line-height: 36px;
+            margin: 20px 24px;
+        }
+    }
+}

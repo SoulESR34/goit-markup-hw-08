@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import "normalize.css";
+@import '../utils/_variables.scss';
+@import '../utils/_mixins.scss';
+@import '../components/_social-networks';
+@import '../components/_logo';
+@import '../components/_header';
+@import '../components/_backdrop';
+@import '../components/_hero';
+@import '../components/_benefits';
+@import '../components/_what-do-we-do';
+@import '../components/_team';
+@import '../components/_customers';
+@import '../components/_footer';
+@import '../components/_projects.scss';
+
+
+
+
+
+/* Generales  */
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color:$color-default-font;
+    line-height: 1.2;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+
+a:hover,
+a:focus{
+    color:$color-buttons-links;
+}
+
+a{
+    text-decoration: none;
+    font-style: normal;
+    color: $color-default-font;
+}
+
+button:hover,
+button:focus{
+    background-color:$color-buttons-links;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.12);
+    color:$color-white;
+    cursor: pointer;
+}
+
+
+button{
+    border-width:0 ;
+}
+
+header{
+    border-bottom: 1px solid $color-border-header;
+}
+
+.hero,
+footer{
+    background-color: $color-background-dark;
+    color: $color-white ;
+}
+
+footer, 
+.team-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+h2{
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+h2,
+h3{
+    color:$color-titles;
+}
+
+ul{
+    font-style: normal;
+    list-style: none;
+    padding-left: 0;
+    gap: 30px;
+}
+
+
+.section{
+    padding-top: 97px;
+
+}
+
+@include screen-1200{
+    .container{
+        width: 94%;
+    }
+}
+
+@include screen-768{
+    .container{
+        width: 97%;
+    }
+}
+
+@include screen-768{
+
+}

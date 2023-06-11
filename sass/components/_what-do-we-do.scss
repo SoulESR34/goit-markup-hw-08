@@ -1,0 +1,26 @@
+.what_do_we_do__container{
+    padding-bottom: 97px;
+}
+
+.what_do_we_do_images{
+    @include flexbox;
+    justify-content: center;
+}
+
+.what_do_we_do__description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 70px;
+    width: 370px;
+    position: relative;
+    top: -73px;
+    background-color: rgba(47, 48, 58, 0.80);
+    color: $color-white;
+}
+
+@include screen-1200 {
+    
+}
+

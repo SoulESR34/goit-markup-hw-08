@@ -1,0 +1,35 @@
+.social__networks{
+    display: flex;
+    width: 200px;
+    height: 44px; 
+    gap: 10px;
+
+    &__container {
+        width: 44px;
+        height: 44px;
+    }
+    
+    &__container a{
+        
+        display: flex;
+        align-items: center;
+        fill: $color-fill-icons;
+        justify-content: center;
+        border-radius: 50px;
+        width: 44px;
+        height: 44px;
+    }
+    
+    
+    &__container a:hover,
+    &__container a:focus{
+        background-color: $color-buttons-links;
+        fill: $color-white;
+    }
+    
+    &__icon{
+        width: 20px;
+        height: 20px;
+    }
+}
+

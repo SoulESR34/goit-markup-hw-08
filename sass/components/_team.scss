@@ -1,0 +1,39 @@
+
+.team-section{
+    background-color: $color-team-section;
+}
+
+.team{
+    @include flexbox;
+    justify-content: center;
+}
+
+.employee{
+    background-color: $color-white;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    text-align: center;
+
+    .employee__name{
+        font-weight: 500;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-weight: medium;
+    }
+
+    .employee__container__social__networks{
+        padding:16px 32px 30px;
+    }
+}
+
+@include screen-1200{
+    .employee{
+        width: 354px;
+        
+        .employee__container__social__networks{
+            padding:16px 74px 30px;
+        }
+    }
+}
+
+

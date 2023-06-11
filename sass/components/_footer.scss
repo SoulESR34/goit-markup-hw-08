@@ -1,0 +1,82 @@
+.footer-container{
+    @include flexbox;
+}
+
+.footer__logo__and__address{
+    width: 231px;
+}
+
+.footer__social__netwoks{
+    margin-left: 70px;
+    
+    .footer__social__netwoks__text{
+        font-weight: bold;
+        color: $color-white;
+    }
+}
+
+.social__networks{
+    margin-top: 20px;
+    &__container &__link{
+        fill: $color-white;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.10);
+    }
+
+    &__container &__link:hover,
+    &__container &__link:focus{
+        background-color: $color-buttons-links;
+    }
+}
+
+.subscription{
+    margin-left: 93px;
+
+    .subscription__title{
+        margin-bottom: 20px;
+        color: $color-white;
+    }
+
+    .subscription__form{
+        display: flex;
+
+        .subscription__input__footer{
+            background-color: $color-background-dark;
+            color: rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            height: 50px;
+            width: 358px;
+            padding-left: 16px;
+            outline: none;
+            bottom: 4px;
+        }
+
+        .button__sub__footer{
+            color: $color-white;
+            font-weight: bold;
+            background-color: $color-buttons-links;
+            border-radius: 4px;
+
+            height: 50px;
+            width: 200px;
+            margin-left: 12px;
+            display: flex;
+            align-items: center;
+            padding-left: 39px;
+            padding-right: 28px;
+        }
+
+        .button__sub__footer svg{
+            margin-left: 20px;
+            width: 24px;
+            height: 24px;
+            fill: $color-white;
+        }
+    }
+}
+
+
+
+
+

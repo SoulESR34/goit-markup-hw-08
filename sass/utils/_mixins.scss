@@ -1,0 +1,23 @@
+@mixin flexbox($wrap: wrap) {
+    display: flex;
+    flex-wrap: $wrap;
+}   
+
+
+@mixin screen-1200(){
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin screen-768(){
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin screen-480(){
+    @media (max-width: 480px) {
+        @content;
+    }
+}

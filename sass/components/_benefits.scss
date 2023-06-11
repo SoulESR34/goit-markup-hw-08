@@ -1,0 +1,38 @@
+.container__benefits{
+    @include flexbox;
+    justify-content: center;
+}
+
+.benefit{
+    width: 270px;
+    
+    &__box__sup{
+    background-color: $color-team-section;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    height: 120px;
+    }
+
+    &__box__icon{
+        width: 70px;
+        height: 70px;
+        margin: 25px 100px;
+    }
+}
+
+@include screen-1200{
+    .benefit{
+        width: 354px;
+
+        &__box__icon{
+            margin: 25px 142px;
+        }
+    }
+}
+@include screen-768{
+
+}
+@include screen-480{
+
+}
+

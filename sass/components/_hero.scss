@@ -1,0 +1,31 @@
+.hero{
+    background-image: linear-gradient(to top,  rgba(0, 0, 0, 0.133),  rgba(0, 0, 0, 0.133)), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+
+    &__container{
+        padding-top: 200px;
+    }
+    
+    &__title{
+        font-size: 44px;
+        color: $color-white;
+    }
+    
+    &__button{
+        border-width: 0;
+        background-color: $color-buttons-links;
+        color: $color-white;
+        font-size: 16px;
+        margin-top: 30px;
+        width: 261px;
+        height: 50px;
+        border-radius: 4px;
+    }
+    
+    &__button:hover{
+        background-color: $color-buttons-links;
+    }
+}
