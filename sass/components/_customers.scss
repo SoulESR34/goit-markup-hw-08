@@ -49,8 +49,20 @@
             width: 450px;
         }
 
+        .customers{
+            width: 97%;
+        }
+
         .customer{
-            width: 210px;
+            width: calc(100% / 2 - 30px);
+        }
+    }
+}
+
+@include screen-480{
+    .regular-customers{
+        .customers__container{
+            width: 97% ;
         }
     }
 }

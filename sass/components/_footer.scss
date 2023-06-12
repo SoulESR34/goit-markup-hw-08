@@ -76,6 +76,35 @@
     }
 }
 
+@include screen-1200{
+    .footer-container{
+        justify-content: center;
+    }
+    .subscription{
+        display: block;
+        margin-top: 56px;
+        margin-left: 0;
+        width: 100%;
+
+        .subscription__title{
+            text-align: center;
+        }
+
+        .subscription__form{
+            display: block;
+
+            .subscription__input__footer{
+                width: 450px;
+            }
+
+            .button__sub__footer{
+                margin: 20px auto 0;
+            }
+        }
+
+        
+    }
+}
 
 
 
