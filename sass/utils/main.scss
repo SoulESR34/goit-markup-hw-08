@@ -4,15 +4,16 @@
 @import '../utils/_variables.scss';
 @import '../utils/_mixins.scss';
 @import '../components/_social-networks';
-@import '../components/_logo';
-@import '../components/_header';
-@import '../components/_backdrop';
-@import '../components/_hero';
-@import '../components/_benefits';
-@import '../components/_what-do-we-do';
-@import '../components/_team';
-@import '../components/_customers';
-@import '../components/_footer';
+@import '../components/_logo.scss';
+@import '../components/_header.scss';
+@import '../components/_menu__mobile.scss';
+@import '../components/_backdrop.scss';
+@import '../components/_hero.scss';
+@import '../components/_benefits.scss';
+@import '../components/_what-do-we-do.scss';
+@import '../components/_team.scss';
+@import '../components/_customers.scss';
+@import '../components/_footer.scss';
 @import '../components/_projects.scss';
 
 
@@ -105,14 +106,11 @@ ul{
 
 @include screen-1200{
     .container{
-        width: 94%;
+        width: 98%;
     }
 }
 
 @include screen-768{
-    .container{
-        width: 97%;
-    }
 }
 
 @include screen-768{

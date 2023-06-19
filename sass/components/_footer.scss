@@ -13,21 +13,22 @@
         font-weight: bold;
         color: $color-white;
     }
+    .social__networks{
+        margin-top: 20px;
+        &__container &__link{
+            fill: $color-white;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.10);
+        }
+
+        &__container &__link:hover,
+        &__container &__link:focus{
+            background-color: $color-buttons-links;
+        }
+    }
 }
 
-.social__networks{
-    margin-top: 20px;
-    &__container &__link{
-        fill: $color-white;
-        border-radius: 50px;
-        background-color: rgba(255, 255, 255, 0.10);
-    }
 
-    &__container &__link:hover,
-    &__container &__link:focus{
-        background-color: $color-buttons-links;
-    }
-}
 
 .subscription{
     margin-left: 93px;
@@ -79,16 +80,14 @@
 @include screen-1200{
     .footer-container{
         justify-content: center;
+        text-align: center;
     }
+
     .subscription{
         display: block;
         margin-top: 56px;
         margin-left: 0;
         width: 100%;
-
-        .subscription__title{
-            text-align: center;
-        }
 
         .subscription__form{
             display: block;
@@ -103,6 +102,28 @@
         }
 
         
+    }
+}
+
+@include screen-768{
+    .footer__social__netwoks{
+        margin-left: 0;
+        margin-top: 57px;
+        width: 100%;
+        .social__networks{
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    }
+}
+
+@include screen-480{
+    .subscription{
+        .subscription__form{
+            .subscription__input__footer{
+                width: 90%;
+            }
+        }
     }
 }
 

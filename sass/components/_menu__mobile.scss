@@ -1,0 +1,61 @@
+.menu__mobile{
+    background-color: $color-white;
+    width: 480px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+.menu__mobile__container{
+    width: 410px;
+}
+
+.menu__mobile__close__button{
+    background-color: $color-white;
+    margin-left: 436px;
+}
+
+.menu__mobile__close__button:hover{
+    background-color: $color-white;
+    box-shadow: none;
+    fill: $color-buttons-links;
+}
+
+.menu__close__icon{
+    width: 19px;
+    height: 19px;
+}
+
+.menu__mobile__nav__bar__links__page{
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.menu__mobile__header__contact{
+    margin-top: 300px;
+
+    .menu__phone{
+        color: $color-buttons-links ;
+    }
+    .menu__mail{
+        font-size: 24px;
+    }
+}
+
+.menu__mobile__container__social__network{
+    display: flex;
+    gap: 10px;
+    margin-top: 64px;
+    font-size: 18px;
+}
+
+@include screen-480{
+    .menu__mobile{
+        width: 100%;
+    }
+}

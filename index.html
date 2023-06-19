@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Estudio</title>
   </head>
@@ -34,23 +33,71 @@
               </ul>
             </nav>
           </div>
-        </div>
 
+        </div>
+        
         <address class="header__contact">
           <svg class="header__icon--email">
             <use href="./images/svg/sprite.svg#mail"></use>
           </svg>
           <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-
+          
           <svg class="header__icon--phone">
             <use href="./images/svg/sprite.svg#tel"></use>
           </svg>
-          <a class="phone" href="tel:+525555296000">+52 55 5529 6000</a>
+          <a class="phone" href="tel:+380961111111">+38 096 111 11 11</a>
         </address>
+
+        <button class="header__button__menu__mobile">
+          <svg class="menu__mobile__icon">
+            <use href="/images/svg/sprite.svg#mobile_menu_header_icon"></use>
+          </svg>
+        </button>
       </div>
     </header>
-
+    
       <main>
+
+        <section class="menu__mobile">
+          <div class="menu__mobile__container">
+            <button class="menu__mobile__close__button">
+              <svg class="menu__close__icon">
+                <use href="/images/svg/sprite.svg#menu__close__icon"></use>
+              </svg>
+            </button>
+
+            <ul class="menu__mobile__nav__bar__links__page">
+              <li class="menu__nav__bar__link">
+                <a href="index.html" rel="noopener noreferrer">Estudio</a>
+              </li>
+
+              <li class="menu__nav__bar__link">
+                <a href="portafolio.html" rel="noopener noreferrer">Portafolio</a>
+              </li>
+
+              <li class="menu__nav__bar__link">
+                <a href="#" rel="noopener noreferrer">Contactos</a>
+              </li>
+            </ul>
+
+            <address class="menu__mobile__header__contact">
+              <a class="menu__phone" href="tel:+380961111111">+38 096 111 11 11</a>
+
+              <a class="menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </address>
+
+            <ul class="menu__mobile__container__social__network">
+              <li class="menu__social__network"><a href="#">Instagram</a></li>
+              <li>|</li>
+              <li class="menu__social__network"><a href="#">Twitter</a></li>
+              <li>|</li>
+              <li class="menu__social__network"><a href="#">Facebook</a></li>
+              <li>|</li>
+              <li class="menu__social__network"><a href="#">Linkedin</a></li>
+            </ul>
+          </div>
+        </section>
+
         <section class="backdrop is-hidden" data-modal>
           <form action="" class="backdrop__modal__form ">
             <button type="button" class="form__close__button" data-modal-close>
@@ -123,7 +170,6 @@
         </section> 
 
         <section class="section benefits">
-
           <div class="container">
             <ul class="container__benefits">
               <li class="benefit">
@@ -196,7 +242,7 @@
                   src="./images/box1.jpg"
                   alt="caja1"
                   width="370px"
-                  height="323.7px"
+                  
                 />
                 <div class="what_do_we_do__description"><p>APLICACIONES DE ESCRITORIO</p></div>
               </li>
@@ -206,7 +252,7 @@
                   src="./images/box2.jpg"
                   alt="caja2"
                   width="370px"
-                  height="323.7px"
+                  
                 />
                 <div class="what_do_we_do__description"><p>APLICACIONES MOVILES</p></div>              
               </li >
@@ -216,7 +262,7 @@
                   src="./images/box3.jpg"
                   alt="caja3"
                   width="370px"
-                  height="323.7px"
+                  
                 />
                 <div class="what_do_we_do__description"><p>SOLUCIONES DE DISEÑO</p></div>
               </li>
@@ -230,12 +276,24 @@
             <h2>Nuestro equipo</h2>
             <ul class="team">
               <li class="employee">
-                <img
-                  src="./images/employee1.jpg"
+                <picture>
+                  <source 
+                  media="(min-width:1200px)"
+                  srcset="./images/desk/team/employee1.jpg x1,
+                  ./images/desk/team/employee1@x2.jpg x2" 
+                  >
+
+                  <source srcset="./images/tablet/team/employee1.jpg x1,
+                  ./images/tablet/team/employee1@x2.jpg x2" media="(min-width:768px)"
+                  >
+
+                  <img class="imagen_prueba"
+                  srcset="./images/mobile/team/employee1.jpg x1,
+                  ./images/mobile/team/employee1@x2.jpg x2"
+                  src="./images/mobile/team/employee1.jpg"
                   alt="tarjeta del equipo 1"
-                  width="270px"
-                  height="260px"
-                />
+                  />
+                </picture>
                 <h3 class="employee__name">Andrés Cubo</h3>
                 <p>Diseñador de Productos</p>
 
@@ -277,12 +335,18 @@
               </li>
 
               <li class="employee">
-                <img
-                  src="./images/employee2.jpg"
-                  alt="tarjeta del equipo 2"
-                  width="270px"
-                  height="260px"
-                />
+                <picture>
+                  <source 
+                    media="(min-width: 1200px)"
+                    srcset="">
+                  <source media="(min-width: 768px)">
+                  <img
+                    src="./images/employee2.jpg"
+                    alt="tarjeta del equipo 2"
+                    width="270px"
+                    
+                  />
+                </picture>
                 <h3 class="employee__name">Carla Palacios</h3>
                 <p>Desarrolladora Frontend</p>
 
@@ -324,12 +388,18 @@
               </li>
 
               <li class="employee">
-                <img
-                  src="./images/employee3.jpg"
-                  alt="tarjeta del equipo 3"
-                  width="270px"
-                  height="260px"
-                />
+                <picture>
+                  <source 
+                    media="(min-width: 1200px)"
+                    srcset="">
+                  <source media="(min-width: 768px)">
+                  <img
+                    src="./images/employee3.jpg"
+                    alt="tarjeta del equipo 3"
+                    width="270px"
+                    
+                  />
+                </picture>
                 <h3 class="employee__name">Mario Dorado</h3>
                 <p>Marketing</p>
 
@@ -371,12 +441,18 @@
               </li>
 
               <li class="employee">
-                <img
-                  src="./images/employee4.jpg"
-                  alt="tarjeta del equipo 4"
-                  width="270px"
-                  height="260px"
-                />
+                <picture>
+                  <source 
+                    media="(min-width: 1200px)"
+                    srcset="">
+                  <source media="(min-width: 768px)">
+                  <img
+                    src="./images/employee4.jpg"
+                    alt="tarjeta del equipo 4"
+                    width="270px"
+                    
+                  />
+                </picture>
                 <h3 class="employee__name">Pablo Mijangos</h3>
                 <p>Diseñador IU</p>
 
@@ -485,7 +561,7 @@
             </address>
           </div>
 
-          <section class="footer__social__netwoks">
+          <div class="footer__social__netwoks">
             <p class="footer__social__netwoks__text">ENCUENTRANOS EN</p>
 
             <ul class="social__networks">
@@ -521,7 +597,7 @@
                 </a>
               </li>
             </ul>
-          </section>
+          </div>
 
           <div class="subscription">
             <p class="subscription__title">SUSCRÍBASE AL BOLETÍN INFORMATIVO</p>

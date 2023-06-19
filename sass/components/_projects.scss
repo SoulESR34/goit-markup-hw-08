@@ -14,7 +14,7 @@
     }
 }
 
-.projects__container{
+.projects__cards{
     margin-bottom: 82px;
 }
 
@@ -65,6 +65,15 @@
         &__text{
             line-height: 36px;
             margin: 20px 24px;
+        }
+    }
+}
+
+@include screen-1200{
+
+    .projects{
+        .project{
+            width: 354px;
         }
     }
 }

@@ -3,7 +3,7 @@
     padding-top: 25px;
     padding-bottom: 25px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between  ;
 
     .header__logo__nav__bar{
         display: flex;
@@ -54,6 +54,24 @@
         }   
     }
     
+
+    .header__button__menu__mobile{
+        background-color: white;
+        display: flex;
+        align-items: center;
+        box-shadow: none;
+    }
+
+    .header__button__menu__mobile:hover{
+        background-color: white;
+        fill: $color-buttons-links;
+    }
+
+
+    .menu__mobile__icon{
+        width: 24px;
+        height: 16px;
+    }
 }
 
 @include screen-1200{
@@ -65,21 +83,23 @@
             }
         }
     }
-
 }
+
 @include screen-768{
     .header-items{
-
+        padding:0 15px;
+        .nav__bar,
         .header__contact{
-            width: 140px;
-            font-size: 12px;
-        }
-
-        .nav__bar{
-            margin-left: 88px;
+            display: none;
         }
     }
 }
-@include screen-480{
 
+@media (min-width: 768px) {
+    .header-items{
+        .header__button__menu__mobile{
+            display: none;
+        }
+    }
 }
+

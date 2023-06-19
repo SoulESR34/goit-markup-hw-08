@@ -20,7 +20,9 @@
     color: $color-white;
 }
 
-@include screen-1200 {
-    
+@include screen-768 {
+    .what_do_we_do__container{
+        display: none;
+    }
 }
 
