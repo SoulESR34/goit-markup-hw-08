@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Estudio</title>
   </head>
@@ -23,15 +17,14 @@
 
           <div class="header__nav__bar">
             <nav class="nav__bar">
+
               <ul class="nav__bar__links__page">
                 <li class="nav__bar__link">
                   <a href="index.html" rel="noopener noreferrer">Estudio</a>
                 </li>
 
                 <li class="nav__bar__link">
-                  <a href="portafolio.html" rel="noopener noreferrer"
-                    >Portafolio</a
-                  >
+                  <a href="portafolio.html" rel="noopener noreferrer">Portafolio</a>
                 </li>
 
                 <li class="nav__bar__link">
@@ -41,15 +34,13 @@
             </nav>
           </div>
         </div>
-
+        
         <address class="header__contact">
           <svg class="header__icon--email">
             <use href="./images/svg/sprite.svg#mail"></use>
           </svg>
-          <a class="mail" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-
+          <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          
           <svg class="header__icon--phone">
             <use href="./images/svg/sprite.svg#tel"></use>
           </svg>
@@ -63,613 +54,574 @@
         </a>
       </div>
     </header>
+    
+      <main>
+        <section class="menu-mobile">
+            <div class="menu__mobile__container">
+              <div class="menu__mobile__nav__bar__links__page">
+                <a>Estudio</a>
+                <a>Portafolio</a>
+                <a>Contactos</a>
+              </div>
 
-    <main>
-      <section class="menu-mobile">
-        <div class="menu__mobile__container">
-          <div class="menu__mobile__nav__bar__links__page">
-            <a>Estudio</a>
-            <a>Portafolio</a>
-            <a>Contactos</a>
+              <div class="menu__mobile__contact">
+                <a>+38 096 111 11 11</a>
+                <a>info@devstudio.com</a>
+              </div>
+
+
+              <ul class="menu__mobile__container__social__network">
+                <li><a href="#">Instagram</a></li>
+                <li>|</li>
+                <li><a href="#">Twitter</a></li>
+                <li>|</li>
+                <li><a href="#">Facebook</a></li>
+                <li>|</li>
+                <li><a href="#">Linkedin</a></li>
+              </ul>
+            </div>
+        </section>
+
+        <section class="backdrop is-hidden" data-modal>
+          <p> 
+          <form action="" class="backdrop__modal__form ">
+            <button type="button" class="form__close__button" data-modal-close>
+              <svg class="form__close__button__icon">
+                <use href="./images/svg/sprite.svg#close_icon"></use>
+              </svg>
+            </button>
+
+            <fieldset class="modal__conainer__form">
+              <legend class="form__title">Deje sus datos, nos contactaremos con usted</legend>
+
+              <label for="user_name" class="form__label">
+                <p>Nombre</p>
+                <div class="form__container__input">
+                  <input class="form__input" name="user_name" type="text" required>
+                  <svg class="form__input__icon">
+                    <use href="./images/svg/sprite.svg#icon_form_user"></use>
+                  </svg>
+                </div>
+              </label>
+
+              <label for="phone" class="form__label">
+                <p>Teléfono</p>
+                <div class="form__container__input">
+                  <input class="form__input" name="phone" type="tel" required>
+                  <svg class="form__input__icon">
+                    <use href="./images/svg/sprite.svg#icon_form_phone"></use>
+                  </svg>
+                </div>
+              </label>
+
+              <label for="email" class="form__label">
+                <p>E-mail</p>
+                <div class="form__container__input">
+                  <input class="form__input" name="email" type="email" required>
+                  <svg class="form__input__icon">
+                    <use href="./images/svg/sprite.svg#icon_form_mail"></use>
+                  </svg>
+                </div>
+              </label>
+
+              <label for="comments" class="form__label">
+                <p>Comentarios</p> 
+                <div class="form__container__input">
+                  <textarea class="form__input--textarea" name="comments" name="comments" id="" rows="6" placeholder="Introduzca texto"></textarea>
+                </div>
+              </label>
+
+              <label for="check" class="form__label__check">
+                  <input class="form__input--check" name="check" type="checkbox" required>
+                  <span class="form__container__check">
+                    <svg class="form__checked__icon">
+                      <use href="./images/svg/sprite.svg#checked"></use>
+                    </svg>
+                  </span>
+                  <p>Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</p>
+              </label>
+            </fieldset>
+            <button class="button--submit" type="submit">Enviar</button>
+          </form>
+        </section>
+
+        <section class="section hero">
+          <div class="container hero__container">
+            <h1 class="hero__title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+            <button class="hero__button" type="button" data-modal-open>
+              solicite nuestro servicio
+            </button>
           </div>
+        </section> 
 
-          <div class="menu__mobile__contact">
-            <a>+38 096 111 11 11</a>
-            <a>info@devstudio.com</a>
+        <section class="section benefits">
+          <div class="container">
+            <ul class="container__benefits">
+              <li class="benefit">
+                <div class="benefit__box__sup">
+                  <svg class="benefit__box__icon">
+                    <use href="./images/svg/sprite.svg#antenna"></use>
+                  </svg>
+                </div>
+
+                <h3>ATENCIÓN A LOS DETALLES</h3>
+                <p>
+                  Nos adentramos en todos los detalles y procesos de su negocio,
+                  para así desarrollar una solución a su medida.
+                </p>
+              </li>
+
+              <li class="benefit">
+                <div class="benefit__box__sup">
+                  <svg class="benefit__box__icon">
+                    <use href="./images/svg/sprite.svg#watch"></use>
+                  </svg>
+                </div>
+
+                <h3>PUNTUALIDAD</h3>
+                <p>
+                  Con nosotros, usted puede sentirse seguro y protegido. Un
+                  principio importante de la empresa: respetar su tiempo y respetar
+                  los plazos acordados.
+                </p>
+              </li>
+
+              <li class="benefit">
+                <div class="benefit__box__sup">
+                  <svg class="benefit__box__icon">
+                    <use href="./images/svg/sprite.svg#graphics"></use>
+                  </svg>
+                </div>
+
+                <h3>PLANIFICACIÓN</h3>
+                <p>
+                  Usted podrá observar y participar en cada fase del desarrollo y
+                  aplicación de soluciones.
+                </p>
+              </li>
+
+              <li class="benefit">
+                <div class="benefit__box__sup">
+                  <svg class="benefit__box__icon">
+                    <use href="./images/svg/sprite.svg#astronaut"></use>
+                  </svg>
+                </div>
+
+                <h3>TEGNOLOGÍA MODERNA</h3>
+                <p>
+                  Usamos herramientas innovadoras para resolver las tareas
+                  asignadas. Es hora de simplificar los procesos laborales.
+                </p>
+              </li>
+            </ul>
           </div>
+        </section>
 
-          <ul class="menu__mobile__container__social__network">
-            <li><a href="#">Instagram</a></li>
-            <li>|</li>
-            <li><a href="#">Twitter</a></li>
-            <li>|</li>
-            <li><a href="#">Facebook</a></li>
-            <li>|</li>
-            <li><a href="#">Linkedin</a></li>
-          </ul>
-        </div>
-      </section>
+        <section class="section what-do-we-do">
+          <div class="container what_do_we_do__container">
+            <h2>A qué nos dedicamos</h2>
 
-      <section class="backdrop is-hidden" data-modal>
-        <p></p>
-        <form action="" class="backdrop__modal__form">
-          <button type="button" class="form__close__button" data-modal-close>
-            <svg class="form__close__button__icon">
-              <use href="./images/svg/sprite.svg#close_icon"></use>
-            </svg>
-          </button>
-
-          <fieldset class="modal__conainer__form">
-            <legend class="form__title">
-              Deje sus datos, nos contactaremos con usted
-            </legend>
-
-            <label for="user_name" class="form__label">
-              <p>Nombre</p>
-              <div class="form__container__input">
-                <input
-                  class="form__input"
-                  name="user_name"
-                  type="text"
-                  required
+            <ul class="what_do_we_do_images">
+              <li class="what_do_we_do_image">
+                <img
+                  src="./images/desk/what-do-we-do/box1.jpg"
+                  alt="caja1"
+                  width="370px"
+                  
                 />
-                <svg class="form__input__icon">
-                  <use href="./images/svg/sprite.svg#icon_form_user"></use>
-                </svg>
-              </div>
-            </label>
+                <div class="what_do_we_do__description"><p>APLICACIONES DE ESCRITORIO</p></div>
+              </li>
 
-            <label for="phone" class="form__label">
-              <p>Teléfono</p>
-              <div class="form__container__input">
-                <input class="form__input" name="phone" type="tel" required />
-                <svg class="form__input__icon">
-                  <use href="./images/svg/sprite.svg#icon_form_phone"></use>
-                </svg>
-              </div>
-            </label>
+              <li class="what_do_we_do_image">
+                <img
+                  src="./images/desk/what-do-we-do/box2.jpg"
+                  alt="caja2"
+                  width="370px"
+                  
+                />
+                <div class="what_do_we_do__description"><p>APLICACIONES MOVILES</p></div>              
+              </li >
 
-            <label for="email" class="form__label">
-              <p>E-mail</p>
-              <div class="form__container__input">
-                <input class="form__input" name="email" type="email" required />
-                <svg class="form__input__icon">
-                  <use href="./images/svg/sprite.svg#icon_form_mail"></use>
-                </svg>
-              </div>
-            </label>
+              <li class="what_do_we_do_image">
+                <img
+                  src="./images/desk/what-do-we-do/box3.jpg"
+                  alt="caja3"
+                  width="370px"
+                  
+                />
+                <div class="what_do_we_do__description"><p>SOLUCIONES DE DISEÑO</p></div>
+              </li>
+            </ul>
 
-            <label for="comments" class="form__label">
-              <p>Comentarios</p>
-              <div class="form__container__input">
-                <textarea
-                  class="form__input--textarea"
-                  name="comments"
-                  name="comments"
-                  id=""
-                  rows="6"
-                  placeholder="Introduzca texto"
-                ></textarea>
-              </div>
-            </label>
+          </div>
+        </section>
 
-            <label for="check" class="form__label__check">
-              <input
-                class="form__input--check"
-                name="check"
-                type="checkbox"
-                required
-              />
-              <span class="form__container__check">
-                <svg class="form__checked__icon">
-                  <use href="./images/svg/sprite.svg#checked"></use>
-                </svg>
-              </span>
-              <p>
-                Estoy de acuerdo con el boletín informativo y acepto los
-                Términos y Condiciones
-              </p>
-            </label>
-          </fieldset>
-          <button class="button--submit" type="submit">Enviar</button>
-        </form>
-      </section>
-
-      <section class="section hero">
-        <div class="container hero__container">
-          <h1 class="hero__title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-          <button class="hero__button" type="button" data-modal-open>
-            solicite nuestro servicio
-          </button>
-        </div>
-      </section>
-
-      <section class="section benefits">
-        <div class="container">
-          <ul class="container__benefits">
-            <li class="benefit">
-              <div class="benefit__box__sup">
-                <svg class="benefit__box__icon">
-                  <use href="./images/svg/sprite.svg#antenna"></use>
-                </svg>
-              </div>
-
-              <h3>ATENCIÓN A LOS DETALLES</h3>
-              <p>
-                Nos adentramos en todos los detalles y procesos de su negocio,
-                para así desarrollar una solución a su medida.
-              </p>
-            </li>
-
-            <li class="benefit">
-              <div class="benefit__box__sup">
-                <svg class="benefit__box__icon">
-                  <use href="./images/svg/sprite.svg#watch"></use>
-                </svg>
-              </div>
-
-              <h3>PUNTUALIDAD</h3>
-              <p>
-                Con nosotros, usted puede sentirse seguro y protegido. Un
-                principio importante de la empresa: respetar su tiempo y
-                respetar los plazos acordados.
-              </p>
-            </li>
-
-            <li class="benefit">
-              <div class="benefit__box__sup">
-                <svg class="benefit__box__icon">
-                  <use href="./images/svg/sprite.svg#graphics"></use>
-                </svg>
-              </div>
-
-              <h3>PLANIFICACIÓN</h3>
-              <p>
-                Usted podrá observar y participar en cada fase del desarrollo y
-                aplicación de soluciones.
-              </p>
-            </li>
-
-            <li class="benefit">
-              <div class="benefit__box__sup">
-                <svg class="benefit__box__icon">
-                  <use href="./images/svg/sprite.svg#astronaut"></use>
-                </svg>
-              </div>
-
-              <h3>TEGNOLOGÍA MODERNA</h3>
-              <p>
-                Usamos herramientas innovadoras para resolver las tareas
-                asignadas. Es hora de simplificar los procesos laborales.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section what-do-we-do">
-        <div class="container what_do_we_do__container">
-          <h2>A qué nos dedicamos</h2>
-
-          <ul class="what_do_we_do_images">
-            <li class="what_do_we_do_image">
-              <img
-                src="./images/desk/what-do-we-do/box1.jpg"
-                alt="caja1"
-                width="370px"
-              />
-              <div class="what_do_we_do__description">
-                <p>APLICACIONES DE ESCRITORIO</p>
-              </div>
-            </li>
-
-            <li class="what_do_we_do_image">
-              <img
-                src="./images/desk/what-do-we-do/box2.jpg"
-                alt="caja2"
-                width="370px"
-              />
-              <div class="what_do_we_do__description">
-                <p>APLICACIONES MOVILES</p>
-              </div>
-            </li>
-
-            <li class="what_do_we_do_image">
-              <img
-                src="./images/desk/what-do-we-do/box3.jpg"
-                alt="caja3"
-                width="370px"
-              />
-              <div class="what_do_we_do__description">
-                <p>SOLUCIONES DE DISEÑO</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section team-section">
-        <div class="container">
-          <h2>Nuestro equipo</h2>
-          <ul class="team">
-            <li class="employee">
-              <picture>
-                <source
+        <section class="section team-section">
+          <div class="container">
+            <h2>Nuestro equipo</h2>
+            <ul class="team">
+              <li class="employee">
+                <picture>
+                  <source 
                   media="(min-width:1200px)"
                   srcset="./images/desk/team/employee1.jpg x1,
-                  ./images/desk/team/employee1@x2.jpg x2"
-                />
+                  ./images/desk/team/employee1@x2.jpg x2" 
+                  >
 
-                <source
-                  srcset="./images/tablet/team/employee1.jpg x1,
-                  ./images/tablet/team/employee1@x2.jpg x2"
-                  media="(min-width:768px)"
-                />
+                  <source srcset="./images/tablet/team/employee1.jpg x1,
+                  ./images/tablet/team/employee1@x2.jpg x2" media="(min-width:768px)"
+                  >
 
-                <img
+                  <img
                   srcset="./images/mobile/team/employee1.jpg x1,
                   ./images/mobile/team/employee1@x2.jpg x2"
                   src="./images/mobile/team/employee1.jpg"
                   alt="tarjeta del equipo 1"
-                />
-              </picture>
-              <h3 class="employee__name">Andrés Cubo</h3>
-              <p>Diseñador de Productos</p>
+                  />
+                </picture>
+                <h3 class="employee__name">Andrés Cubo</h3>
+                <p>Diseñador de Productos</p>
 
-              <div class="employee__container__social__networks">
-                <ul class="social__networks">
-                  <li class="social__networks__container">
-                    <a href="#">
-                      <svg class="social__networks__icon">
-                        <use href="./images/svg/sprite.svg#instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
+                <div class="employee__container__social__networks">
+                  <ul class="social__networks">
+                    <li class="social__networks__container">
+                      <a href="#">
+                        <svg class="social__networks__icon">
+                          <use href="./images/svg/sprite.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="social__networks__container">
-                    <a href="#">
-                      <svg class="social__networks__icon">
-                        <use href="./images/svg/sprite.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <li class="social__networks__container">
+                      <a href="#">
+                        <svg class="social__networks__icon">
+                          <use href="./images/svg/sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="social__networks__container">
-                    <a href="#">
-                      <svg class="social__networks__icon">
-                        <use href="./images/svg/sprite.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <li class="social__networks__container">
+                      <a href="#">
+                        <svg class="social__networks__icon">
+                          <use href="./images/svg/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="social__networks__container">
-                    <a href="#">
-                      <svg class="social__networks__icon">
-                        <use href="./images/svg/sprite.svg#linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+                    <li class="social__networks__container">
+                      <a href="#">
+                        <svg class="social__networks__icon">
+                          <use href="./images/svg/sprite.svg#linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
 
-            <li class="employee">
-              <source
-                media="(min-width: 1200px)"
-                srcset="
-                  ./images/desk/team/employee2.jpg    1x,
-                  ./images/desk/team/employee2@x2.jpg 2x
-                "
-              />
+              <li class="employee">
+                <picture>
+                  <source 
+                  media="(min-width:1200px)"
+                  srcset="./images/desk/team/employee2.jpg x1,
+                  ./images/desk/team/employee2@x2.jpg x2" 
+                  >
 
-              <source
-                srcset="
-                  ./images/tablet/team/employee2.jpg    1x,
-                  ./images/tablet/team/employee2@x2.jpg 2x
-                "
-                media="(min-width: 768px)"
-              />
+                  <source srcset="./images/tablet/team/employee2.jpg x1,
+                  ./images/tablet/team/employee2@x2.jpg x2" media="(min-width:768px)"
+                  >
 
-              <img
-                srcset="
-                  ./images/mobile/team/employee2.jpg    1x,
-                  ./images/mobile/team/employee2@x2.jpg 2x
-                "
-                src="./images/mobile/team/employee2.jpg"
-                alt="tarjeta del equipo 1"
-              />
+                  <img
+                  srcset="./images/mobile/team/employee2.jpg x1,
+                  ./images/mobile/team/employee2@x2.jpg x2"
+                  src="./images/mobile/team/employee2.jpg"
+                  alt="tarjeta del equipo 1"
+                  />
+                </picture>
 
-              <h3 class="employee__name">Carla Palacios</h3>
-              <p>Desarrolladora Frontend</p>
+                <h3 class="employee__name">Carla Palacios</h3>
+                <p>Desarrolladora Frontend</p>
 
-              <div class="employee__container__social__networks">
-                <ul class="social__networks">
-                  <li class="social__networks__container">
-                    <a href="#">
-                      <svg class="social__networks__icon">
-                        <use href="./images/svg/sprite.svg#instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
+                <div class="employee__container__social__networks">
+                  <ul class="social__networks">
+                    <li class="social__networks__container">
+                      <a href="#">
+                        <svg class="social__networks__icon">
+                          <use href="./images/svg/sprite.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="social__networks__container">
-                    <a href="#">
-                      <svg class="social__networks__icon">
-                        <use href="./images/svg/sprite.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <li class="social__networks__container">
+                      <a href="#">
+                        <svg class="social__networks__icon">
+                          <use href="./images/svg/sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="social__networks__container">
-                    <a href="#">
-                      <svg class="social__networks__icon">
-                        <use href="./images/svg/sprite.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <li class="social__networks__container">
+                      <a href="#">
+                        <svg class="social__networks__icon">
+                          <use href="./images/svg/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="social__networks__container">
-                    <a href="#">
-                      <svg class="social__networks__icon">
-                        <use href="./images/svg/sprite.svg#linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+                    <li class="social__networks__container">
+                      <a href="#">
+                        <svg class="social__networks__icon">
+                          <use href="./images/svg/sprite.svg#linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
 
-            <li class="employee">
-              <picture>
-                <source
+              <li class="employee">
+                <picture>
+                  <source 
                   media="(min-width:1200px)"
                   srcset="./images/desk/team/employee3.jpg x1,
-                  ./images/desk/team/employee3@x2.jpg x2"
-                />
+                  ./images/desk/team/employee3@x2.jpg x2" 
+                  >
 
-                <source
-                  srcset="./images/tablet/team/employee3.jpg x1,
-                  ./images/tablet/team/employee3@x2.jpg x2"
-                  media="(min-width:768px)"
-                />
+                  <source srcset="./images/tablet/team/employee3.jpg x1,
+                  ./images/tablet/team/employee3@x2.jpg x2" media="(min-width:768px)"
+                  >
 
-                <img
+                  <img
                   srcset="./images/mobile/team/employee3.jpg x1,
                   ./images/mobile/team/employee3@x2.jpg x2"
                   src="./images/mobile/team/employee3.jpg"
                   alt="tarjeta del equipo 1"
-                />
-              </picture>
+                  />
+                </picture>
 
-              <h3 class="employee__name">Mario Dorado</h3>
-              <p>Marketing</p>
+                <h3 class="employee__name">Mario Dorado</h3>
+                <p>Marketing</p>
 
-              <div class="employee__container__social__networks">
-                <ul class="social__networks">
-                  <li class="social__networks__container">
-                    <a href="#">
-                      <svg class="social__networks__icon">
-                        <use href="./images/svg/sprite.svg#instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
+                <div class="employee__container__social__networks">
+                  <ul class="social__networks">
+                    <li class="social__networks__container">
+                      <a href="#">
+                        <svg class="social__networks__icon">
+                          <use href="./images/svg/sprite.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="social__networks__container">
-                    <a href="#">
-                      <svg class="social__networks__icon">
-                        <use href="./images/svg/sprite.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <li class="social__networks__container">
+                      <a href="#">
+                        <svg class="social__networks__icon">
+                          <use href="./images/svg/sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="social__networks__container">
-                    <a href="#">
-                      <svg class="social__networks__icon">
-                        <use href="./images/svg/sprite.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <li class="social__networks__container">
+                      <a href="#">
+                        <svg class="social__networks__icon">
+                          <use href="./images/svg/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="social__networks__container">
-                    <a href="#">
-                      <svg class="social__networks__icon">
-                        <use href="./images/svg/sprite.svg#linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+                    <li class="social__networks__container">
+                      <a href="#">
+                        <svg class="social__networks__icon">
+                          <use href="./images/svg/sprite.svg#linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
 
-            <li class="employee">
-              <picture>
-                <source
+              <li class="employee">
+                <picture>
+                  <source 
                   media="(min-width:1200px)"
                   srcset="./images/desk/team/employee4.jpg x1,
-                  ./images/desk/team/employee4@x2.jpg x2"
-                />
+                  ./images/desk/team/employee4@x2.jpg x2" 
+                  >
 
-                <source
-                  srcset="./images/tablet/team/employee4.jpg x1,
-                  ./images/tablet/team/employee4@x2.jpg x2"
-                  media="(min-width:768px)"
-                />
+                  <source srcset="./images/tablet/team/employee4.jpg x1,
+                  ./images/tablet/team/employee4@x2.jpg x2" media="(min-width:768px)"
+                  >
 
-                <img
+                  <img
                   srcset="./images/mobile/team/employee4.jpg x1,
                   ./images/mobile/team/employee4@x2.jpg x2"
                   src="./images/mobile/team/employee4.jpg"
                   alt="tarjeta del equipo 1"
-                />
-              </picture>
-              <h3 class="employee__name">Pablo Mijangos</h3>
-              <p>Diseñador IU</p>
+                  />
+                </picture>
+                <h3 class="employee__name">Pablo Mijangos</h3>
+                <p>Diseñador IU</p>
 
-              <div class="employee__container__social__networks">
-                <ul class="social__networks">
-                  <li class="social__networks__container">
-                    <a href="#">
-                      <svg class="social__networks__icon">
-                        <use href="./images/svg/sprite.svg#instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
+                <div class="employee__container__social__networks">
+                  <ul class="social__networks">
+                    <li class="social__networks__container">
+                      <a href="#">
+                        <svg class="social__networks__icon">
+                          <use href="./images/svg/sprite.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="social__networks__container">
-                    <a href="#">
-                      <svg class="social__networks__icon">
-                        <use href="./images/svg/sprite.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <li class="social__networks__container">
+                      <a href="#">
+                        <svg class="social__networks__icon">
+                          <use href="./images/svg/sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="social__networks__container">
-                    <a href="#">
-                      <svg class="social__networks__icon">
-                        <use href="./images/svg/sprite.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <li class="social__networks__container">
+                      <a href="#">
+                        <svg class="social__networks__icon">
+                          <use href="./images/svg/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="social__networks__container">
-                    <a href="#">
-                      <svg class="social__networks__icon">
-                        <use href="./images/svg/sprite.svg#linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="regular-customers">
-        <div class="container customers__container">
-          <h2>Clientes regulares</h2>
-          <ul class="customers">
-            <li class="customer">
-              <a href="#">
-                <svg class="customer__icon">
-                  <use href="./images/svg/sprite.svg#logo_customer1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customer">
-              <a href="#">
-                <svg class="customer__icon">
-                  <use href="./images/svg/sprite.svg#logo_customer2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customer">
-              <a href="#">
-                <svg class="customer__icon">
-                  <use href="./images/svg/sprite.svg#logo_customer3"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customer">
-              <a href="#">
-                <svg class="customer__icon">
-                  <use href="./images/svg/sprite.svg#logo_customer4"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customer">
-              <a href="#">
-                <svg class="customer__icon">
-                  <use href="./images/svg/sprite.svg#logo_customer5"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customer">
-              <a href="#">
-                <svg class="customer__icon">
-                  <use href="./images/svg/sprite.svg#logo_customer6"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container footer-container">
-        <div class="footer__logo__and__address">
-          <a class="logo" href="#">WebStudio</a>
-
-          <address class="footer__address">
-            <ul>
-              <li>Calz. Ticomán 500, Ciudad de México, CDMX, México</li>
-              <li><a href="mailto:info@example.com">info@example.com</a></li>
-              <li><a href="tel:+525555296000">+52 55 5529 6000</a></li>
+                    <li class="social__networks__container">
+                      <a href="#">
+                        <svg class="social__networks__icon">
+                          <use href="./images/svg/sprite.svg#linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
-          </address>
+          </div>
+        </section>
+
+        <section class="regular-customers">
+          <div class="container customers__container">
+            <h2>Clientes regulares</h2>
+            <ul class="customers">
+              <li class="customer">
+                <a href="#">
+                  <svg  class="customer__icon">
+                    <use href="./images/svg/sprite.svg#logo_customer1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="customer">
+                <a href="#">
+                  <svg  class="customer__icon">
+                    <use href="./images/svg/sprite.svg#logo_customer2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="customer">
+                <a href="#">
+                  <svg  class="customer__icon">
+                    <use href="./images/svg/sprite.svg#logo_customer3"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="customer">
+                <a href="#">
+                  <svg  class="customer__icon">
+                    <use href="./images/svg/sprite.svg#logo_customer4"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="customer">
+                <a href="#">
+                  <svg  class="customer__icon">
+                    <use href="./images/svg/sprite.svg#logo_customer5"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="customer">
+                <a href="#">
+                  <svg class="customer__icon">
+                    <use href="./images/svg/sprite.svg#logo_customer6"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main> 
+
+      <footer>
+        <div class="container footer-container">
+          <div class="footer__logo__and__address">
+            <a class="logo" href="#">WebStudio</a>
+
+            <address class="footer__address">
+              <ul>
+                <li>Calz. Ticomán 500, Ciudad de México, CDMX, México</li>
+                <li><a href="mailto:info@example.com">info@example.com</a></li>
+                <li><a href="tel:+525555296000">+52 55 5529 6000</a></li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer__social__netwoks">
+            <p class="footer__social__netwoks__text">ENCUENTRANOS EN</p>
+
+            <ul class="social__networks">
+              <li class="social__networks__container">
+                <a class="social__networks__link" href="#">
+                  <svg class="social__networks__icon">
+                    <use href="./images/svg/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social__networks__container">
+                <a class="social__networks__link" href="#">
+                  <svg class="social__networks__icon">
+                    <use href="./images/svg/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social__networks__container">
+                <a class="social__networks__link" href="#">
+                  <svg class="social__networks__icon">
+                    <use href="./images/svg/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social__networks__container">
+                <a class="social__networks__link" href="#">
+                  <svg class="social__networks__icon">
+                    <use href="./images/svg/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="subscription">
+            <p class="subscription__title">SUSCRÍBASE AL BOLETÍN INFORMATIVO</p>
+            <form class="subscription__form" action="">
+              <label for="">
+                <input class="subscription__input__footer" type="email" placeholder="Correo electronico">
+              </label>
+              <button type="submit" class="button__sub__footer">
+                Suscribase
+                <svg>
+                  <use href="./images/svg/sprite.svg#send_icon"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
+      </footer>
 
-        <div class="footer__social__netwoks">
-          <p class="footer__social__netwoks__text">ENCUENTRANOS EN</p>
-
-          <ul class="social__networks">
-            <li class="social__networks__container">
-              <a class="social__networks__link" href="#">
-                <svg class="social__networks__icon">
-                  <use href="./images/svg/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social__networks__container">
-              <a class="social__networks__link" href="#">
-                <svg class="social__networks__icon">
-                  <use href="./images/svg/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social__networks__container">
-              <a class="social__networks__link" href="#">
-                <svg class="social__networks__icon">
-                  <use href="./images/svg/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social__networks__container">
-              <a class="social__networks__link" href="#">
-                <svg class="social__networks__icon">
-                  <use href="./images/svg/sprite.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="subscription">
-          <p class="subscription__title">SUSCRÍBASE AL BOLETÍN INFORMATIVO</p>
-          <form class="subscription__form" action="">
-            <label for="">
-              <input
-                class="subscription__input__footer"
-                type="email"
-                placeholder="Correo electronico"
-              />
-            </label>
-            <button type="submit" class="button__sub__footer">
-              Suscribase
-              <svg>
-                <use href="./images/svg/sprite.svg#send_icon"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
-      </div>
-    </footer>
-
-    <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+      <script src="./js/modal.js"></script>
+      <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
