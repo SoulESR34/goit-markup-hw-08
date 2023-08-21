@@ -22,23 +22,32 @@
     }
 
     .employee__container__social__networks{
-        padding:16px 32px 30px;
+        display: flex;
+        justify-content: center;
+        margin-top: 18px;
+        margin-bottom: 26px;
     }
-}
-
-.imagen_prueba{
-    width: 100%;
-
 }
 
 @include screen-1200{
     .employee{
         width: 354px;
-        
-        .employee__container__social__networks{
-            padding:16px 74px 30px;
-        }
     }
 }
 
+@include screen-768{
+    .employee{
+        width: 450px;
+    }
+}
+
+@include screen-480{
+    .employee{
+        width: 98%;
+
+        img{
+            width: 100%;
+        }
+    }
+}
 

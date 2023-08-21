@@ -1,61 +1,69 @@
-.menu__mobile{
-    background-color: $color-white;
-    width: 480px;
+.menu-mobile{
+    background-color: $color-black-transparent;
+    width: 100%;
     height: 100%;
+    font-size: 40px;
+
     position: fixed;
     top: 0;
     right: 0;
-    display: none;
+    z-index: -1;
 
-    font-size: 40px;
-    padding-left: 10px;
+    display: none;
 }
 
 .menu__mobile__container{
-    width: 410px;
-}
+    width: 430px;
+    height: 100%;
+    padding: 10px;
 
-.menu__mobile__close__button{
-    background-color: $color-white;
-    margin-left: 436px;
-}
+    background-color: white;
 
-.menu__mobile__close__button:hover{
-    background-color: $color-white;
-    box-shadow: none;
-    fill: $color-buttons-links;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-.menu__close__icon{
-    width: 19px;
-    height: 19px;
-}
-
-.menu__mobile__nav__bar__links__page{
-    font-weight: bold;
-    line-height: 80px;
-}
-
-.menu__mobile__header__contact{
-    margin-top: 300px;
-
-    .menu__phone{
-        color: $color-buttons-links ;
+    .menu__mobile__close__button{
+        background-color: $color-white;
+        margin-left: 436px;
+    
+        .menu__close__icon{
+            width: 19px;
+            height: 19px;
+        }
+    
+        .menu__mobile__close__button:hover{
+            background-color: $color-white;
+            box-shadow: none;
+            fill: $color-buttons-links;
+        }
     }
-    .menu__mail{
+    
+    .menu__mobile__nav__bar__links__page{
+        font-weight: bold;
+        line-height: 80px;
+    
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu__mobile__contact{
+        display: flex;
+        flex-direction: column;
         font-size: 24px;
     }
+    
+    .menu__mobile__container__social__network{
+        display: flex;
+        gap: 10px;
+        font-size: 18px;
+    }
 }
 
-.menu__mobile__container__social__network{
-    display: flex;
-    gap: 10px;
-    margin-top: 64px;
-    font-size: 18px;
-}
+
 
 @include screen-480{
-    .menu__mobile{
+    .menu-mobile{
         width: 100%;
     }
 }

@@ -77,3 +77,12 @@
         }
     }
 }
+
+@include screen-768{
+
+    .projects{
+        .project{
+            width: 450px;
+        }
+    }
+}

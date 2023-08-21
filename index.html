@@ -33,7 +33,6 @@
               </ul>
             </nav>
           </div>
-
         </div>
         
         <address class="header__contact">
@@ -48,65 +47,51 @@
           <a class="phone" href="tel:+380961111111">+38 096 111 11 11</a>
         </address>
 
-        <button class="header__button__menu__mobile">
+        <a class="header__button__menu__mobile" href="#menu-mobile-id">
           <svg class="menu__mobile__icon">
             <use href="/images/svg/sprite.svg#mobile_menu_header_icon"></use>
           </svg>
-        </button>
+        </a>
       </div>
     </header>
     
       <main>
+        <section class="menu-mobile">
+            <div class="menu__mobile__container">
+              <div class="menu__mobile__nav__bar__links__page">
+                <a>Estudio</a>
+                <a>Portafolio</a>
+                <a>Contactos</a>
+              </div>
 
-        <section class="menu__mobile">
-          <div class="menu__mobile__container">
-            <button class="menu__mobile__close__button">
-              <svg class="menu__close__icon">
-                <use href="/images/svg/sprite.svg#menu__close__icon"></use>
-              </svg>
-            </button>
+              <div class="menu__mobile__contact">
+                <a>+38 096 111 11 11</a>
+                <a>info@devstudio.com</a>
+              </div>
 
-            <ul class="menu__mobile__nav__bar__links__page">
-              <li class="menu__nav__bar__link">
-                <a href="index.html" rel="noopener noreferrer">Estudio</a>
-              </li>
 
-              <li class="menu__nav__bar__link">
-                <a href="portafolio.html" rel="noopener noreferrer">Portafolio</a>
-              </li>
-
-              <li class="menu__nav__bar__link">
-                <a href="#" rel="noopener noreferrer">Contactos</a>
-              </li>
-            </ul>
-
-            <address class="menu__mobile__header__contact">
-              <a class="menu__phone" href="tel:+380961111111">+38 096 111 11 11</a>
-
-              <a class="menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </address>
-
-            <ul class="menu__mobile__container__social__network">
-              <li class="menu__social__network"><a href="#">Instagram</a></li>
-              <li>|</li>
-              <li class="menu__social__network"><a href="#">Twitter</a></li>
-              <li>|</li>
-              <li class="menu__social__network"><a href="#">Facebook</a></li>
-              <li>|</li>
-              <li class="menu__social__network"><a href="#">Linkedin</a></li>
-            </ul>
-          </div>
+              <ul class="menu__mobile__container__social__network">
+                <li><a href="#">Instagram</a></li>
+                <li>|</li>
+                <li><a href="#">Twitter</a></li>
+                <li>|</li>
+                <li><a href="#">Facebook</a></li>
+                <li>|</li>
+                <li><a href="#">Linkedin</a></li>
+              </ul>
+            </div>
         </section>
 
         <section class="backdrop is-hidden" data-modal>
+          <p> 
           <form action="" class="backdrop__modal__form ">
             <button type="button" class="form__close__button" data-modal-close>
               <svg class="form__close__button__icon">
                 <use href="./images/svg/sprite.svg#close_icon"></use>
               </svg>
             </button>
-            <fieldset class="modal__conainer__form">
 
+            <fieldset class="modal__conainer__form">
               <legend class="form__title">Deje sus datos, nos contactaremos con usted</legend>
 
               <label for="user_name" class="form__label">
@@ -239,7 +224,7 @@
             <ul class="what_do_we_do_images">
               <li class="what_do_we_do_image">
                 <img
-                  src="./images/box1.jpg"
+                  src="./images/desk/what-do-we-do/box1.jpg"
                   alt="caja1"
                   width="370px"
                   
@@ -249,7 +234,7 @@
 
               <li class="what_do_we_do_image">
                 <img
-                  src="./images/box2.jpg"
+                  src="./images/desk/what-do-we-do/box2.jpg"
                   alt="caja2"
                   width="370px"
                   
@@ -259,7 +244,7 @@
 
               <li class="what_do_we_do_image">
                 <img
-                  src="./images/box3.jpg"
+                  src="./images/desk/what-do-we-do/box3.jpg"
                   alt="caja3"
                   width="370px"
                   
@@ -287,7 +272,7 @@
                   ./images/tablet/team/employee1@x2.jpg 2x" media="(min-width:768px)"
                   >
 
-                  <img class="imagen_prueba"
+                  <img
                   srcset="./images/mobile/team/employee1.jpg 1x,
                   ./images/mobile/team/employee1@x2.jpg 2x"
                   src="./images/mobile/team/employee1.jpg"
@@ -337,16 +322,23 @@
               <li class="employee">
                 <picture>
                   <source 
-                    media="(min-width: 1200px)"
-                    srcset="">
-                  <source media="(min-width: 768px)">
+                  media="(min-width:1200px)"
+                  srcset="./images/desk/team/employee2.jpg 1x,
+                  ./images/desk/team/employee2@x2.jpg 2x" 
+                  >
+
+                  <source srcset="./images/tablet/team/employee2.jpg 1x,
+                  ./images/tablet/team/employee2@x2.jpg 2x" media="(min-width:768px)"
+                  >
+
                   <img
-                    src="./images/employee2.jpg"
-                    alt="tarjeta del equipo 2"
-                    width="270px"
-                    
+                  srcset="./images/mobile/team/employee2.jpg 1x,
+                  ./images/mobile/team/employee2@x2.jpg 2x"
+                  src="./images/mobile/team/employee2.jpg"
+                  alt="tarjeta del equipo 1"
                   />
                 </picture>
+
                 <h3 class="employee__name">Carla Palacios</h3>
                 <p>Desarrolladora Frontend</p>
 
@@ -390,16 +382,23 @@
               <li class="employee">
                 <picture>
                   <source 
-                    media="(min-width: 1200px)"
-                    srcset="">
-                  <source media="(min-width: 768px)">
+                  media="(min-width:1200px)"
+                  srcset="./images/desk/team/employee3.jpg 1x,
+                  ./images/desk/team/employee3@x2.jpg 2x" 
+                  >
+
+                  <source srcset="./images/tablet/team/employee3.jpg 1x,
+                  ./images/tablet/team/employee3@x2.jpg 2x" media="(min-width:768px)"
+                  >
+
                   <img
-                    src="./images/employee3.jpg"
-                    alt="tarjeta del equipo 3"
-                    width="270px"
-                    
+                  srcset="./images/mobile/team/employee3.jpg 1x,
+                  ./images/mobile/team/employee3@x2.jpg 2x"
+                  src="./images/mobile/team/employee3.jpg"
+                  alt="tarjeta del equipo 1"
                   />
                 </picture>
+
                 <h3 class="employee__name">Mario Dorado</h3>
                 <p>Marketing</p>
 
@@ -443,14 +442,20 @@
               <li class="employee">
                 <picture>
                   <source 
-                    media="(min-width: 1200px)"
-                    srcset="">
-                  <source media="(min-width: 768px)">
+                  media="(min-width:1200px)"
+                  srcset="./images/desk/team/employee4.jpg 1x,
+                  ./images/desk/team/employee4@x2.jpg 2x" 
+                  >
+
+                  <source srcset="./images/tablet/team/employee4.jpg 1x,
+                  ./images/tablet/team/employee4@x2.jpg 2x" media="(min-width:768px)"
+                  >
+
                   <img
-                    src="./images/employee4.jpg"
-                    alt="tarjeta del equipo 4"
-                    width="270px"
-                    
+                  srcset="./images/mobile/team/employee4.jpg 1x,
+                  ./images/mobile/team/employee4@x2.jpg 2x"
+                  src="./images/mobile/team/employee4.jpg"
+                  alt="tarjeta del equipo 1"
                   />
                 </picture>
                 <h3 class="employee__name">Pablo Mijangos</h3>
@@ -615,6 +620,8 @@
           </div>
         </div>
       </footer>
+
       <script src="./js/modal.js"></script>
+      <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

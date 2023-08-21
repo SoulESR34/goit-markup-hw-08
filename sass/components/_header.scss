@@ -87,7 +87,8 @@
 
 @include screen-768{
     .header-items{
-        padding:0 15px;
+        padding:16px 15px;
+
         .nav__bar,
         .header__contact{
             display: none;
