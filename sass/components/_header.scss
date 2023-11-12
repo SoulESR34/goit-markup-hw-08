@@ -1,9 +1,12 @@
+
+
 .header-items{
     @include flexbox();
     padding-top: 25px;
     padding-bottom: 25px;
     align-items: center;
     justify-content: space-between  ;
+    height: 80px;
 
     .header__logo__nav__bar{
         display: flex;
@@ -30,7 +33,7 @@
             content: "";
         
             position: relative;
-            top:30px;
+            top:29px;
             left: 0;
         
             background-color: $color-buttons-links;
@@ -69,8 +72,8 @@
 
 
     .menu__mobile__icon{
-        width: 24px;
-        height: 16px;
+        width: 40px;
+        height: 40px;
     }
 }
 

@@ -7,9 +7,14 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: -1;
+
 
     display: none;
+}
+
+.is-open{
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .menu__mobile__container{
@@ -23,17 +28,21 @@
     flex-direction: column;
     justify-content: space-between;
 
+    position: relative;
+
     .menu__mobile__close__button{
         background-color: $color-white;
-        margin-left: 436px;
-    
+        width: 40px;
+        height: 40px;
+
+        position: absolute;
+        right: 0;
         .menu__close__icon{
-            width: 19px;
-            height: 19px;
+            width: 40px;
+            height: 40px;
         }
     
-        .menu__mobile__close__button:hover{
-            background-color: $color-white;
+        &:hover{
             box-shadow: none;
             fill: $color-buttons-links;
         }

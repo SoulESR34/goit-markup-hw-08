@@ -1,10 +1,13 @@
 .hero{
-    background-image: linear-gradient(to top,  rgba(0, 0, 0, 0.133),  rgba(0, 0, 0, 0.133)), url(../images/mobile/hero/hero.jpg);
+    background-image: linear-gradient(to top,  rgba(0, 0, 0, 0.133),  rgba(0, 0, 0, 0.133)), url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 600px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    padding-top: 0;
 
     &__container{
         padding-top: 200px;
@@ -28,17 +31,5 @@
     
     &__button:hover{
         background-color: $color-buttons-links;
-    }
-}
-
-@media (min-width:768px) {
-    .hero{
-        background-image: linear-gradient(to top,  rgba(0, 0, 0, 0.133),  rgba(0, 0, 0, 0.133)), url(../images/tablet/hero/hero.jpg);
-    }
-}
-
-@media (min-width:1200px) {
-    .hero{
-        background-image: linear-gradient(to top,  rgba(0, 0, 0, 0.133),  rgba(0, 0, 0, 0.133)), url(../images/desk/hero/hero.jpg);
     }
 }

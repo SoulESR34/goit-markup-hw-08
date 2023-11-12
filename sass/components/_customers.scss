@@ -3,6 +3,10 @@
     padding-bottom: 105px;
 }
 
+.regular-customers{
+    padding-bottom: 97px
+}
+
 .customers{
     @include flexbox;
     justify-content: center;

@@ -30,25 +30,20 @@
     }
 }
 
-@include screen-1200{
-    .employee{
-        width: 354px;
-    }
+.employee__image{
+    width:270px;
 }
 
+
 @include screen-768{
-    .employee{
-        width: 450px;
+    .employee__image{
+        width:350px;
     }
 }
 
 @include screen-480{
-    .employee{
-        width: 98%;
-
-        img{
-            width: 100%;
-        }
+    .employee__image{
+        width: 100%;
     }
 }
 
